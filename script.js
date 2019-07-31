@@ -12,20 +12,17 @@ function rotate(index) {
   let delta = 165;
 
   cards.forEach((item, ind) => { 
-			if (ind < index) {
-        item.style.transform = `rotate(${delta}deg)`
-        delta -= 10
-      }
-			else
-				if (ind == index) {
-          delta = 0
-          item.style.transform = `rotate(${delta}deg)`
-          delta =- 10
-        }
-				else {
-          item.style.transform = `rotate(${delta}deg)`
-          delta-=10
-        }
-			})
+  if (ind < index) {
+    item.style.transform = `rotate(${delta}deg)`
+    delta -= 10
+  } else if (ind == index) {
+    delta = 0
+    item.style.transform = `rotate(${delta}deg)`
+    delta =- 10
+  } else {
+    item.style.transform = `rotate(${delta}deg)`
+    delta-=10
+  }
+})
   
 }
