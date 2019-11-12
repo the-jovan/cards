@@ -2,7 +2,7 @@ body {
   margin:  0;
   padding: 0;
   overflow: hidden;
-  font-family: 'Anton', 'Arial', sans-serif;
+  font-family: 'Anton', 'Arial', 'Helvetica', sans-serif;
 }
 
 #main {
